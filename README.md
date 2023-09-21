@@ -1,3 +1,6 @@
+#Fork details
+After having issues with not achieving 15-Hz readouts, I created this fork that minimizes I2C bandwidth, by removing all data not needed for range readouts.
+
 # VL53L5CX CTypes Python Wrapper
 
 [![PyPi Package](https://img.shields.io/pypi/v/vl53l5cx-ctypes.svg)](https://pypi.python.org/pypi/vl53l5cx-ctypes)
