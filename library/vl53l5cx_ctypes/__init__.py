@@ -79,16 +79,16 @@ class VL53L5CX_MotionData(Structure):
 
 class VL53L5CX_ResultsData(Structure):
     _fields_ = [
-        ("silicon_temp_degc", c_int8),
-        ("ambient_per_spad", c_uint32 * 64),
-        ("nb_target_detected", c_uint8 * 64),
-        ("nb_spads_enabled", c_uint32 * 64),
-        ("signal_per_spad", c_uint32 * 64 * NB_TARGET_PER_ZONE),
-        ("range_sigma_mm", c_uint16 * 64 * NB_TARGET_PER_ZONE),
+        #("silicon_temp_degc", c_int8),
+        #("ambient_per_spad", c_uint32 * 64),
+        #("nb_target_detected", c_uint8 * 64),
+        #("nb_spads_enabled", c_uint32 * 64),
+        #("signal_per_spad", c_uint32 * 64 * NB_TARGET_PER_ZONE),
+        #("range_sigma_mm", c_uint16 * 64 * NB_TARGET_PER_ZONE),
         ("distance_mm", c_int16 * 64 * NB_TARGET_PER_ZONE),
-        ("reflectance", c_uint8 * 64 * NB_TARGET_PER_ZONE),
-        ("target_status", c_uint8 * 64 * NB_TARGET_PER_ZONE),
-        ("motion_indicator", VL53L5CX_MotionData)
+        #("reflectance", c_uint8 * 64 * NB_TARGET_PER_ZONE),
+        #("target_status", c_uint8 * 64 * NB_TARGET_PER_ZONE),
+        #("motion_indicator", VL53L5CX_MotionData)
     ]
 
 
